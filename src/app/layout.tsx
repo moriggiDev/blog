@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="flex gap-6">
               <ul className="flex gap-6 md:gap-20"> 
                 <li>
-                  <Link href="/" className="text-sm md:text-lg text-white transition-colors">
+                  <Link href="/categoria/natureza" className="text-sm md:text-lg text-white transition-colors">
                     Natureza
                   </Link>
                 </li>
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-sm md:text-lg text-white transition-colors">
+                  <Link href="/categoria/saude" className="text-sm md:text-lg text-white transition-colors">
                     Saúde
                   </Link>
                 </li>
