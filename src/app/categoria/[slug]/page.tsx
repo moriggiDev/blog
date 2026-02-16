@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Post } from "../../../types/post";
+import Carrossel from "@/components/Carrossel";
 
 
 export default async function CategoriaPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -26,6 +27,10 @@ export default async function CategoriaPage({ params }: { params: Promise<{ slug
                 <span className="mr-2 transition-transform group-hover:-translate-x-1">←</span>
                 Voltar para Home
             </Link>
+
+            <section className="mb-12">
+                <Carrossel posts={postsFiltrados} />
+            </section>
 
             <h1 className="text-4xl font-bold uppercase mb-8 border-b border-zinc-800 pb-2">
                 Categoria: {slug}

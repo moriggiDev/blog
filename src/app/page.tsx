@@ -1,6 +1,8 @@
 import { Post } from "@/types/post";
 import Carrossel from "@/components/Carrossel";
 import { ListaPosts } from "@/components/ListaPosts";
+import Feed from "@/components/Feed";
+
 
 export default async function Home() {
 
@@ -19,6 +21,7 @@ export default async function Home() {
       <section>
         <h2 className="text-2xl font-black uppercase mb-8 italic">Mais Notícias</h2>
         <ListaPosts posts={postsRestantes} />
+        <Feed posts={allPosts} />
       </section>
     </main>
   );
