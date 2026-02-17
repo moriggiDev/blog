@@ -19,12 +19,12 @@ export default async function CategoriaPage({ params }: { params: Promise<{ slug
 
 
     return (
-        <main className="p-8 bg-black min-h-screen text-white">
+        <main className="p-8 w-full min-h-screen bg-gradient-to-r from-black to-purple-600 text-white">
             <Link
                 href="/"
-                className="inline-flex items-center text-zinc-400 hover:text-white transition-colors mb-6 group"
+                className="inline-flex items-center text-zinc-400 hover:text-emerald-400 transition-colors mb-6 group"
             >
-                <span className="mr-2 transition-transform group-hover:-translate-x-1">←</span>
+                <span className="mr-2 transition-transform group-hover:">←</span>
                 Voltar para Home
             </Link>
 

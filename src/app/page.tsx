@@ -19,7 +19,7 @@ export default async function Home() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-black uppercase mb-8 italic">Mais Notícias</h2>
+            <h2 className="font-bold">Mais Notícias</h2>
         <ListaPosts posts={postsRestantes} />
         <Feed posts={allPosts} />
       </section>
