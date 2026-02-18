@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import "./globals.css";
-import Image from "next/image"; // Importe o componente de imagem
+import Image from "next/image"; 
+import Header from "@/components/Header";
 
 
 export const metadata: Metadata = {
@@ -10,11 +11,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="pt-br">
       <body className="bg-gray-50 text-gray-900 antialiased">
 
-        <header className="bg-black py-8 shadow-xl relative flex justify-between items-center">
+        <Header />
           <div className="w-full px-4 md:px-12 lg:px-20 flex items-center justify-between">
             {/* Lado Esquerdo: Textos */}
 
@@ -22,12 +24,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <h1 className="text-3xl font-black text-white tracking-tighter uppercase">
                 NXS Hub
               </h1>
-              <p className="text-xs text-zinc-400 font-medium mt-1">
+              <p className="hidden md:blocktext-xs text-zinc-400 font-medium mt-1">
                 Blog de interação com o recrutador
               </p>
             </div>
 
-            <nav className="flex gap-6">
+            <nav className="w-full mt-auto flex">
               <ul className="flex gap-6 md:gap-20"> 
                 <li>
                   <Link href="/categoria/natureza" className="text-sm md:text-lg text-white transition-colors">
@@ -64,8 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
           </div>
-        </header>
-
+       
         <main className="max-w-4xl mx-auto px-4 py-10">
           {children}
         </main>

@@ -34,7 +34,7 @@ export default function Carrossel({ posts }: CarrosselProps) {
                     Destaque {indiceAtivo + 1} / {posts.length}
                 </span>
 
-                <h3 className="text-white text-3xl md:text-4xl text-6xl font-black leading-none mb-6 max-w-4xl drop-shadow-2xl">
+                <h3 className="hidden md:blocktext-white text-3xl sm:text-4xl text-6xl font-black leading-none mb-6 max-w-4xl drop-shadow-2xl">
                     {postAtual.title}
                 </h3>
 
